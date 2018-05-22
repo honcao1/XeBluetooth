@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dhcn.honcao.xebluetooth.MainActivity">
+
+    <Button
+        android:id="@+id/btnScan"
+        android:background="@drawable/blu"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:background="@drawable/xuong"
+        android:id="@+id/btnLui"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="lùi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:background="@drawable/phai"
+        android:id="@+id/btnPhai"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="phải"
+        android:layout_above="@+id/btnLui"
+        android:layout_toRightOf="@+id/btnLui"
+        android:layout_toEndOf="@+id/btnLui" />
+
+    <Button
+        android:id="@+id/btnTrai"
+        android:background="@drawable/trai"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="trái"
+        android:layout_above="@+id/btnLui"
+        android:layout_toLeftOf="@+id/btnLui"
+        android:layout_toStartOf="@+id/btnLui" />
+
+    <Button
+        android:id="@+id/btnTien"
+        android:background="@drawable/len"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="tiến"
+        android:layout_above="@+id/btnPhai"
+        android:layout_toRightOf="@+id/btnTrai"
+        android:layout_toEndOf="@+id/btnTrai" />
+
+</RelativeLayout>
